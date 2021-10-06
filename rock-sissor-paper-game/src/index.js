@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import App from './App';
 
 const WINS = {
   rock: 'scissor',
@@ -30,6 +31,7 @@ ReactDOM.render(
     <button className="hand" onClick={handleClick}>가위</button>
     <button className="hand" onClick={handleClick}>바위</button>
     <button className="hand" onClick={handleClick}>보</button>
+    <App />
   </>,
   document.getElementById('root')
 );
