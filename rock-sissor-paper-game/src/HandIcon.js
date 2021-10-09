@@ -6,21 +6,11 @@ const IMAGES = {
   rock: rockImg,
   scissor: scissorImg,
   paper: paperImg,
-}
+};
 
-function HandIcon(props) {
-  // let Img;
-  // if (props.value === 'rock') {
-  //   Img = rockImg;
-  // } else if (props.value === 'scissor') {
-  //   Img = scissorImg;
-  // } else {
-  //   Img = paperImg;
-  // }
-
-  const src = IMAGES[props.value];
-
-  return <img src={src} alt={props.value} />
+function HandIcon({ value }) {
+  const src = IMAGES[value];
+  return <img src={src} alt={value} />;
 }
 
 export default HandIcon;
